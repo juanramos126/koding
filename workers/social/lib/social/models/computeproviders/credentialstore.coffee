@@ -11,7 +11,9 @@ module.exports = class CredentialStore
 
   @SNEAKER_SUPPORTED = do ->
 
-    return no  if process.env.CI
+    if process.env.CI
+      console.log "CI=#{process.env.CI} credentialstore.coffee: sneakerS3 is not supported"
+      return no
 
     for key, val of KONFIG.sneakerS3
       return no  if not val or val is ''
