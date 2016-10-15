@@ -83,7 +83,7 @@ func configJson() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config.json", size: 3277, mode: os.FileMode(420), modTime: time.Unix(1446555960, 0)}
+	info := bindataFileInfo{name: "config.json", size: 3277, mode: os.FileMode(420), modTime: time.Unix(1476503561, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
