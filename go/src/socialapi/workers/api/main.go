@@ -15,7 +15,6 @@ import (
 	"socialapi/workers/api/modules/notificationsetting"
 	"socialapi/workers/api/modules/participant"
 	"socialapi/workers/api/modules/pinnedactivity"
-	"socialapi/workers/api/modules/popular"
 	"socialapi/workers/api/modules/privatechannel"
 	"socialapi/workers/api/modules/reply"
 	collaboration "socialapi/workers/collaboration/api"
@@ -77,7 +76,6 @@ func main() {
 	messagelist.AddHandlers(m)
 	participant.AddHandlers(m)
 	pinnedactivity.AddHandlers(m)
-	popular.AddHandlers(m)
 	privatechannel.AddHandlers(m)
 	reply.AddHandlers(m)
 	notificationsetting.AddHandlers(m)
